@@ -7,4 +7,11 @@ class AddBookTest < Test::Unit::TestCase
 
     assert_equal('Add Book:', result)
   end
+
+  def test_second_line
+    result = add book
+      type 'Web Novel'
+
+    assert_equal('Add Book: Web Novel', result)
+  end
 end

@@ -17,3 +17,7 @@ end
 def language(book_lang)
   @book_details << " from #{book_lang}"
 end
+
+def chapters(book_ch)
+  @book_details << " at chapter #{book_ch}"
+end

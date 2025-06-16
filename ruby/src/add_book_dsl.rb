@@ -13,3 +13,7 @@ end
 def title(book_title)
   @book_details << " titled #{book_title}"
 end
+
+def language(book_lang)
+  @book_details << " from #{book_lang}"
+end

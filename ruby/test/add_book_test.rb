@@ -22,4 +22,13 @@ class AddBookTest < Test::Unit::TestCase
 
     assert_equal('Add Book: Web Novel titled King\'s Avatar', result)
   end
+
+  def test_fourth_line
+    result = add book
+      type 'Web Novel'
+      title "King's Avatar"
+      language 'CN'
+
+    assert_equal('Add Book: Web Novel titled King\'s Avatar from CN', result)
+  end
 end

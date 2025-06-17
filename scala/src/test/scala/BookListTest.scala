@@ -14,4 +14,12 @@ class BookListTest extends munit.FunSuite {
 
     assertEquals("Add Book: Web Novel", result)
   }
+
+  test("third line of book list DSL") {
+    val result = add book {
+      _ typed "Web Novel" titled "The King's Avatar"
+    }
+
+    assertEquals("Add Book: Web Novel titled The King's Avatar", result)
+  }
 }

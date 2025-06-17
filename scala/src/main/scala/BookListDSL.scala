@@ -8,10 +8,15 @@ object add extends Dynamic {
     bookDetails.result
 
   def book(bookBlock : add.type => add.type) =
+    bookDetails = new StringBuilder().append(s"Add Book:")
     bookBlock(this)
     bookDetails.result
 
   infix def typed(bookType : String) =
     bookDetails.append(s" ${bookType}")
+    this
+
+  infix def titled(bookTitle : String) =
+    bookDetails.append(s" titled ${bookTitle}")
     this
 }

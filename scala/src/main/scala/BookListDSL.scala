@@ -23,4 +23,8 @@ object add extends Dynamic {
   infix def language(bookOrigin : String) =
     bookDetails.append(s" from ${bookOrigin}")
     this
+
+  infix def chapter(bookChapter : Int) =
+    bookDetails.append(s" at chapter ${bookChapter}")
+    this
 }
